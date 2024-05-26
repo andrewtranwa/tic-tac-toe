@@ -1,6 +1,6 @@
 class Agent {
     constructor() {
-        // This agent assumes it is player one (X) by default.
+
     }
 
     minimax(board, depth, isMaximizing) {
@@ -47,7 +47,6 @@ class Agent {
     }
 
     selectMove(board) {
-        // Decide whether the current player is maximizing or minimizing.
         let result = this.minimax(board, 0, board.playerOne);
         return result.move;
     }
